@@ -11,8 +11,12 @@
     <h1>Galerie</h1>
         <p>lorem⇥</p>
 
-    <div class="overlay" x-show="afficheimage"  @click=afficheimage=null>
+    <div class="overlay" x-show="afficheimage"  @click=afficheimage=null @keyup.escape.window=afficheimage=null>
         <figure><img :src= "afficheimage" alt="image 237... un chiot"></figure>
     </div>
+    <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot"
+    @click="afficheimage='https://picsum.photos/id/236/200/300'">
+    <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot"
+    @click="afficheimage = 'https://picsum.photos/id/237/200/300'">
 </body>
 </html>
