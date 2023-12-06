@@ -62,8 +62,12 @@
     }
     .overlay>figure {
         /* No margin */
+        margin: 0;
         /* 1rem padding */
+        padding: 1rem;
         /* White border of 2px */
+        border: #fff 2px solid;
+      
     }
     
     .overlay>figure>img {
