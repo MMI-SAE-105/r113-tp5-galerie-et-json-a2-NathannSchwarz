@@ -71,6 +71,8 @@
     }
     
     .overlay>figure>img {
-        /* Max width 100% for responsive image */
-        /* Height auto for keeping the ratio */
-    }
+
+        max-width: 100%;
+        height: auto;
+        
+        }
