@@ -34,5 +34,19 @@
             </li>
         </template>
     </ul>
+    <p>Importé avec json:</p>
+    <ul x-data="{ 
+        async donnees(){
+                const resp = await fetch('contenu.json'); 
+                return await resp.json();
+            },
+        }">
+        <template x-for="donnee in donnees">
+            <li>
+                <span x-text="donnee.nom">nom</span> : 
+                <a x-bind:href="donnee.url" x-text="donnee.projet">projet</a>
+            </li>
+        </template>
+    </ul>
 </body>
 </html>
