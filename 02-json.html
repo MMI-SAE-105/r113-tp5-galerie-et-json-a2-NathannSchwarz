@@ -27,5 +27,12 @@
     ],
         
         }">
+        <template x-for="donnee in donnees">
+            <li>
+                <span x-text="donnee.nom">nom</span> : 
+                <a x-bind:href="donnee.url" x-text="donnee.projet">projet</a>
+            </li>
+        </template>
+    </ul>
 </body>
 </html>
